@@ -1,0 +1,13 @@
+<% extend('layout') %>
+<h3><%= subtitle %></h3>
+
+<ul>
+<% for(var i = 0; i < collection.length; i++) { %>
+    <li><%= collection[i]._id %></li>
+    <li><%= collection[i].name %></li>
+    <li><a href=updateCategory/<%= collection[i]._id%> >Update</a></li>
+<% } %>
+</ul>
+<a href="/addCategory">Add New Category</a>
+<a href="/updateCategory">Update Category</a>
+<a href="/login">Login</a>

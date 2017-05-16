@@ -1,0 +1,24 @@
+<% extend('layout') %>
+<div class="content">
+
+    <h3><%= subtitle %></h3>
+    <div class="col-md-6 subContent">
+        <% if(user) { %>
+        <table>
+            <% for(var i = 0; i < user.length; i++) { %>
+            <tr>
+            <td><%= user[i]._id %></td>
+            <td><%= user[i].username %></td>
+            <!--<td><%= user[i].password %></td>-->
+            <td><a href=/updateUser/<%= user[i]._id %> >Update</a></td>
+            <td><a href=/deleteUser/<%= user[i]._id %> >Delete</a></td>
+            </tr>
+            <% } %>
+        </table>
+        <% } %>
+    </div>
+    <di class="col-md-6 links">
+        <a href="/addUserView">Add New User</a>
+        <a href="/login">Login</a>
+    </di>
+</div>

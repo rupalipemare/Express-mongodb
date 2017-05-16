@@ -1,0 +1,9 @@
+<% extend('layout')%>
+<h3><%= subtitle %></h3>
+
+<form action="/updateCategory" method="post">
+    <label>Category</label>
+    <input type="hidden" name="id" value="<%= data._id%>">
+    <input type="text" name="category" value="<%= data.name%>">
+    <input type="submit" name="Update">
+</form>

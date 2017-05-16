@@ -1,0 +1,22 @@
+{
+  "name": "databaseuse",
+  "description": "sample demo using database",
+  "main": "server.js",
+  "authors": [
+    "Rupali Pemare"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
