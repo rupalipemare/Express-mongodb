@@ -10,5 +10,4 @@ We have simple dashboard from where in we login or sign up
 
 As the demo requires mongoDb , make sure mongodb is insatlled in system
 
-Simple userListing , add new user, update user and delete user is done
-
+Simple userListing , add new user, update user and delete user is done.
